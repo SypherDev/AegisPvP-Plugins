@@ -2,6 +2,8 @@ package com.sxn.potionce.data;
 
 import org.bukkit.Material;
 
+import com.sxn.util.Util;
+
 /**
  * Various sets of items for using as enchantments' natural items
  */
@@ -14,6 +16,9 @@ public enum ItemSets {
             Material.GOLD_SWORD,
             Material.DIAMOND_SWORD }),
 
+    BOWS (new Material[] {
+            Material.BOW }),
+
     AXES (new Material[] {
             Material.WOOD_AXE,
             Material.STONE_AXE,
@@ -21,6 +26,8 @@ public enum ItemSets {
             Material.GOLD_AXE,
             Material.DIAMOND_AXE }),
 
+    WEAPONS ((Material[]) Util.combine(SWORDS.getItems(), BOWS.getItems(), AXES.getItems())), 
+    
     HELMETS (new Material[] {
             Material.LEATHER_HELMET,
             Material.CHAINMAIL_HELMET,
@@ -47,19 +54,21 @@ public enum ItemSets {
             Material.CHAINMAIL_LEGGINGS,
             Material.IRON_LEGGINGS,
             Material.GOLD_LEGGINGS,
-            Material.DIAMOND_LEGGINGS});
+            Material.DIAMOND_LEGGINGS}),
+	
+	ARMOR ((Material[]) Util.combine(HELMETS.getItems(), CHESTPLATES.getItems(), LEGGINGS.getItems(), BOOTS.getItems()));
 
     /**
      * Item list
      */
-    Material[] items;
+    private Material[] items;
 
     /**
      * Constructor
      *
      * @param items item list
      */
-    private ItemSets(Material[] items) {
+    ItemSets(Material[] items) {
         this.items = items;
     }
 
@@ -69,4 +78,5 @@ public enum ItemSets {
     public Material[] getItems() {
         return items;
     }
+    
 }
