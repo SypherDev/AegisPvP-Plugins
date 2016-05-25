@@ -17,7 +17,7 @@ public class Juggernaut extends PotionAbsorb {
      * @param plugin plugin reference
      */
     public Juggernaut(Plugin plugin) {
-        super (plugin, EnchantDefaults.JUGGERNAUT, ItemSets.BOOTS.getItems());
+        super (plugin, EnchantDefaults.JUGGERNAUT, ItemSets.CHESTPLATES.getItems());
         description = "Grants resistance when hit";
         suffixGroups.add(SuffixGroups.DEFENSE.getKey());
     }

@@ -17,7 +17,7 @@ public class HealthBoost extends PotionAbsorb {
      * @param plugin plugin reference
      */
     public HealthBoost(Plugin plugin) {
-        super (plugin, EnchantDefaults.HEALTHBOOST, ItemSets.LEGGINGS.getItems());
+        super (plugin, EnchantDefaults.HEALTHBOOST, ItemSets.HELMETS.getItems());
         description = "Grants extra health when struck";
         suffixGroups.add(SuffixGroups.HEALTH.getKey());
     }

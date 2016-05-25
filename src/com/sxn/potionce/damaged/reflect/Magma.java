@@ -20,7 +20,7 @@ public class Magma extends ConfigurableEnchantment {
      * @param plugin plugin reference
      */
     public Magma(Plugin plugin) {
-        super(plugin, EnchantDefaults.MAGMA, ItemSets.CHESTPLATES.getItems(), 2, ConflictGroup.POD);
+        super(plugin, EnchantDefaults.MAGMA, ItemSets.LEGGINGS.getItems(), 2, ConflictGroup.POD);
         description = "Burns enemies when hit";
         suffixGroups.add(SuffixGroups.FIRE.getKey());
     }
