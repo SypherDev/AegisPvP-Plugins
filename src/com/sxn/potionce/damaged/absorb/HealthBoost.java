@@ -7,25 +7,25 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.potion.PotionEffectType;
 
 /**
- * Grants resistance when struck
+ * Grants extra health when struck
  */
-public class Juggernaut extends PotionAbsorb {
+public class HealthBoost extends PotionAbsorb {
 
     /**
      * Constructor
      *
      * @param plugin plugin reference
      */
-    public Juggernaut(Plugin plugin) {
-        super (plugin, EnchantDefaults.JUGGERNAUT, ItemSets.BOOTS.getItems());
-        description = "Grants resistance when hit";
-        suffixGroups.add(SuffixGroups.DEFENSE.getKey());
+    public HealthBoost(Plugin plugin) {
+        super (plugin, EnchantDefaults.HEALTHBOOST, ItemSets.LEGGINGS.getItems());
+        description = "Grants extra health when struck";
+        suffixGroups.add(SuffixGroups.HEALTH.getKey());
     }
 
     /**
      * @return type of potion applied by this enchantment
      */
     public PotionEffectType type() {
-        return PotionEffectType.DAMAGE_RESISTANCE;
+        return PotionEffectType.HEALTH_BOOST;
     }
 }

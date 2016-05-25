@@ -31,6 +31,24 @@ public enum EnchantDefaults {
         put(ConfigValues.TIER_BASE.getKey(), 1);
         put(ConfigValues.TIER_BONUS.getKey(), 0);
     }}),
+    
+    GILLS ("Gills", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 4);
+        put(ConfigValues.TIER_BASE.getKey(), 1);
+        put(ConfigValues.TIER_BONUS.getKey(), 0);
+    }}),
+    
+    REVIVE ("Revive", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 4);
+        put(ConfigValues.TIER_BASE.getKey(), 1);
+        put(ConfigValues.TIER_BONUS.getKey(), 0);
+    }}),
+
+    SATURATION ("Saturation", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 4);
+        put(ConfigValues.TIER_BASE.getKey(), 1);
+        put(ConfigValues.TIER_BONUS.getKey(), 0);
+    }}),
 
     JUMP ("Jump", new Hashtable<String, Object>(){{
         put(ConfigValues.MAX.getKey(), 4);
@@ -91,6 +109,16 @@ public enum EnchantDefaults {
     }}),
 
     FROST ("Frost", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 5);
+        put(ConfigValues.CHANCE_BASE.getKey(), 100);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 0);
+        put(ConfigValues.TIER_BASE.getKey(), 2);
+        put(ConfigValues.TIER_BONUS.getKey(), 0);
+        put(ConfigValues.DUR_BASE.getKey(), 1);
+        put(ConfigValues.DUR_BONUS.getKey(), 0.5);
+    }}),
+
+    HEALTHBOOST ("HealthBoost", new Hashtable<String, Object>(){{
         put(ConfigValues.MAX.getKey(), 5);
         put(ConfigValues.CHANCE_BASE.getKey(), 100);
         put(ConfigValues.CHANCE_BONUS.getKey(), 0);

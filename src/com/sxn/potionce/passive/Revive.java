@@ -7,25 +7,25 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.potion.PotionEffectType;
 
 /**
- * Passively grants fire resistance height
+ * Passively grants regeneration height
  */
-public class NetherShield extends PotionPassive {
+public class Revive extends PotionPassive {
 
     /**
      * Constructor
      *
      * @param plugin plugin reference
      */
-    public NetherShield(Plugin plugin) {
-        super(plugin, EnchantDefaults.NETHERSHIELD, ItemSets.BOOTS.getItems());
-        description = "Passively grants fire resistance bonus";
-        suffixGroups.add(SuffixGroups.FIRE.getKey());
+    public Revive(Plugin plugin) {
+        super(plugin, EnchantDefaults.REVIVE, ItemSets.CHESTPLATES.getItems());
+        description = "Passively grants regeneration bonus";
+        suffixGroups.add(SuffixGroups.HEALTH.getKey());
     }
 
     /**
      * @return potion type applied by this enchantment
      */
     public PotionEffectType type() {
-        return PotionEffectType.FIRE_RESISTANCE;
+        return PotionEffectType.REGENERATION;
     }
 }

@@ -41,6 +41,22 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
      * Adrenaline enchantment reference for updating player data
      */
     Adrenaline adrenaline;
+    /**
+     * NetherShield enchantment reference for updating player data
+     */
+    NetherShield nethershield;
+    /**
+     * Gills enchantment reference for updating player data
+     */
+    Gills gills;
+    /**
+     * Saturation enchantment reference for updating player data
+     */
+    Saturation saturation;
+    /**
+     * Revive enchantment reference for updating player data
+     */
+    Revive revive;
 
     /**
      * Constructor
@@ -78,6 +94,9 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
         jump.clearPlayers();
         energized.clearPlayers();
         adrenaline.clearPlayers();
+        nethershield.clearPlayers();
+        saturation.clearPlayers();
+        revive.clearPlayers();
 
         // Remove listeners
         HandlerList.unregisterAll(this);
@@ -104,6 +123,10 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
         fullbright = new FullBright(this);
         jump = new Jump(this);
         energized = new Energized(this);
+        adrenaline = new Adrenaline(this);
+        nethershield = new NetherShield(this);
+        saturation = new Saturation(this);
+        revive = new Revive(this);
 
         EnchantmentAPI.registerCustomEnchantments(
         		new Berserking(this),
@@ -117,7 +140,7 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
         		new Root(this),
         		new Toxic(this),
         		new Wither(this),
-                jump, fullbright, energized, adrenaline
+                jump, fullbright, energized, adrenaline, nethershield, saturation, revive
         );
 
         // Update the config (because EnchantDefaults will have put any missing data)

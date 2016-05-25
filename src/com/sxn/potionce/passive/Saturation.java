@@ -7,25 +7,25 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.potion.PotionEffectType;
 
 /**
- * Passively grants fire resistance height
+ * Passively grants saturation height
  */
-public class NetherShield extends PotionPassive {
+public class Saturation extends PotionPassive {
 
     /**
      * Constructor
      *
      * @param plugin plugin reference
      */
-    public NetherShield(Plugin plugin) {
-        super(plugin, EnchantDefaults.NETHERSHIELD, ItemSets.BOOTS.getItems());
-        description = "Passively grants fire resistance bonus";
-        suffixGroups.add(SuffixGroups.FIRE.getKey());
+    public Saturation(Plugin plugin) {
+        super(plugin, EnchantDefaults.SATURATION, ItemSets.HELMETS.getItems());
+        description = "Passively grants saturation bonus";
+        suffixGroups.add(SuffixGroups.SPEED.getKey());
     }
 
     /**
      * @return potion type applied by this enchantment
      */
     public PotionEffectType type() {
-        return PotionEffectType.FIRE_RESISTANCE;
+        return PotionEffectType.SATURATION;
     }
 }

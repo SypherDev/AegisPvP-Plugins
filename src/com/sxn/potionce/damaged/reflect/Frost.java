@@ -7,7 +7,7 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.potion.PotionEffectType;
 
 /**
- * Slows enemies on hit
+ * Slows enemies attacks on hit
  */
 public class Frost extends PotionReflect {
 

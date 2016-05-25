@@ -7,7 +7,7 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.potion.PotionEffectType;
 
 /**
- * Applies wither when hit
+ * Applies weakness when hit
  */
 public class Cursed extends PotionReflect {
 
@@ -18,7 +18,7 @@ public class Cursed extends PotionReflect {
      */
     public Cursed(Plugin plugin) {
         super(plugin, EnchantDefaults.CURSED, ItemSets.CHESTPLATES.getItems());
-        description = "Applies wither to foes when hit";
+        description = "Applies weakness to foes when hit";
         suffixGroups.add(SuffixGroups.WEAKNESS.getKey());
     }
 

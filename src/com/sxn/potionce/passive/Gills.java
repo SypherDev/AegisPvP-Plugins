@@ -7,25 +7,25 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.potion.PotionEffectType;
 
 /**
- * Passively grants fire resistance height
+ * Passively grants water breathing jump height
  */
-public class NetherShield extends PotionPassive {
+public class Gills extends PotionPassive {
 
     /**
      * Constructor
      *
      * @param plugin plugin reference
      */
-    public NetherShield(Plugin plugin) {
-        super(plugin, EnchantDefaults.NETHERSHIELD, ItemSets.BOOTS.getItems());
-        description = "Passively grants fire resistance bonus";
-        suffixGroups.add(SuffixGroups.FIRE.getKey());
+    public Gills(Plugin plugin) {
+        super(plugin, EnchantDefaults.GILLS, ItemSets.HELMETS.getItems());
+        description = "Passively grants water breathing bonus";
+        suffixGroups.add(SuffixGroups.BREATHING.getKey());
     }
 
     /**
      * @return potion type applied by this enchantment
      */
     public PotionEffectType type() {
-        return PotionEffectType.FIRE_RESISTANCE;
+        return PotionEffectType.WATER_BREATHING;
     }
 }
