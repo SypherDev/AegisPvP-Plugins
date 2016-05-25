@@ -30,7 +30,7 @@ public enum ItemSets {
 
     SBOWS ((Material[]) Util.combine(SWORDS.getItems(), BOWS.getItems())),
 
-    SAXOPHONES ((Material[]) Util.combine(SWORDS.getItems(), AXES.getItems())),
+    BOXES ((Material[]) Util.combine(BOWS.getItems(), AXES.getItems())),
 
     WEAPONS ((Material[]) Util.combine(SWORDS.getItems(), BOWS.getItems(), AXES.getItems())), 
     
