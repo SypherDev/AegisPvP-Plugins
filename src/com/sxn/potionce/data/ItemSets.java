@@ -25,6 +25,12 @@ public enum ItemSets {
             Material.IRON_AXE,
             Material.GOLD_AXE,
             Material.DIAMOND_AXE }),
+    
+    MELEE ((Material[]) Util.combine(SWORDS.getItems(), AXES.getItems())),
+
+    SBOWS ((Material[]) Util.combine(SWORDS.getItems(), BOWS.getItems())),
+
+    SAXOPHONES ((Material[]) Util.combine(SWORDS.getItems(), AXES.getItems())),
 
     WEAPONS ((Material[]) Util.combine(SWORDS.getItems(), BOWS.getItems(), AXES.getItems())), 
     
