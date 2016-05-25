@@ -17,7 +17,7 @@ public class Frost extends PotionReflect {
      * @param plugin plugin reference
      */
     public Frost(Plugin plugin) {
-        super(plugin, EnchantDefaults.FROST, ItemSets.BOOTS.getItems());
+        super(plugin, EnchantDefaults.FROST, ItemSets.ARMOR.getItems());
         description = "Gives enemies mining fatigue when hit";
         suffixGroups.add(SuffixGroups.SLOWING.getKey());
     }

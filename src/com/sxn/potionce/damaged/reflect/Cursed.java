@@ -17,7 +17,7 @@ public class Cursed extends PotionReflect {
      * @param plugin plugin reference
      */
     public Cursed(Plugin plugin) {
-        super(plugin, EnchantDefaults.CURSED, ItemSets.CHESTPLATES.getItems());
+        super(plugin, EnchantDefaults.CURSED, ItemSets.ARMOR.getItems());
         description = "Applies weakness to foes when hit";
         suffixGroups.add(SuffixGroups.WEAKNESS.getKey());
     }

@@ -17,7 +17,7 @@ public class Poisoned extends PotionInflict {
      * @param plugin plugin reference
      */
     public Poisoned(Plugin plugin) {
-        super(plugin, EnchantDefaults.POISONED,  ItemSets.SWORDS.getItems());
+        super(plugin, EnchantDefaults.POISONED,  ItemSets.SBOWS.getItems());
         description = "Poisons enemies on hit";
         suffixGroups.add(SuffixGroups.POISON.getKey());
     }

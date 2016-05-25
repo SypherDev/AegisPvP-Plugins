@@ -17,7 +17,7 @@ public class Phantom extends PotionAbsorb {
      * @param plugin plugin reference
      */
     public Phantom(Plugin plugin) {
-        super (plugin, EnchantDefaults.PHANTOM, ItemSets.LEGGINGS.getItems());
+        super (plugin, EnchantDefaults.PHANTOM, ItemSets.ARMOR.getItems());
         description = "Grants temporary invisibility when hit";
         suffixGroups.add(SuffixGroups.INVISIBILITY.getKey());
     }

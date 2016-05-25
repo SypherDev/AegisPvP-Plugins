@@ -17,7 +17,7 @@ public class Root extends PotionInflict {
      * @param plugin plugin reference
      */
     public Root(Plugin plugin) {
-        super(plugin, EnchantDefaults.ROOT, ItemSets.SWORDS.getItems());
+        super(plugin, EnchantDefaults.ROOT, ItemSets.SBOWS.getItems());
         description = "Slows enemies on hit";
         suffixGroups.add(SuffixGroups.SLOWING.getKey());
     }

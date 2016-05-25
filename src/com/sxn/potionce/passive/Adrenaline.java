@@ -11,7 +11,7 @@ import org.bukkit.potion.PotionEffectType;
  */
 public class Adrenaline extends PotionPassive {
     public Adrenaline(Plugin plugin) {
-        super(plugin, EnchantDefaults.ADRENALINE, ItemSets.HELMETS.getItems());
+        super(plugin, EnchantDefaults.ADRENALINE, ItemSets.ARMOR.getItems());
         description = "Passively grants extra damage";
         suffixGroups.add(SuffixGroups.STRENGTH.getKey());
     }

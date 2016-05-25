@@ -17,7 +17,7 @@ public class Blinding extends PotionInflict {
      * @param plugin plugin reference
      */
     public Blinding(Plugin plugin) {
-        super(plugin, EnchantDefaults.BLINDING, ItemSets.SWORDS.getItems());
+        super(plugin, EnchantDefaults.BLINDING, ItemSets.SBOWS.getItems());
         description = "Blinds enemies on hit";
         suffixGroups.add(SuffixGroups.BLIND.getKey());
     }

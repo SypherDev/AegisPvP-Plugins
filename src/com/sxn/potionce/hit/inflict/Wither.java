@@ -17,7 +17,7 @@ public class Wither extends PotionInflict {
      * @param plugin plugin reference
      */
     public Wither(Plugin plugin) {
-        super(plugin, EnchantDefaults.WITHER, ItemSets.SWORDS.getItems());
+        super(plugin, EnchantDefaults.WITHER, ItemSets.MELEE.getItems());
         description = "Applies wither on hit";
         suffixGroups.add(SuffixGroups.WITHER.getKey());
     }

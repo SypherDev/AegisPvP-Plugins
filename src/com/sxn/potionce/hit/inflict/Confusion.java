@@ -10,7 +10,7 @@ import com.sxn.potionce.data.ItemSets;
 public class Confusion extends PotionInflict {
 
 	public Confusion(Plugin plugin) {
-        super(plugin, EnchantDefaults.CONFUSION,  ItemSets.WEAPONS.getItems());
+        super(plugin, EnchantDefaults.CONFUSION,  ItemSets.BOXES.getItems());
         description = "Warps its victims' vision";
         suffixGroups.add(SuffixGroups.INVISIBILITY.getKey()); // there's no SuffixGroups.CONFUSION, rip
 	}

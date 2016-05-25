@@ -17,7 +17,7 @@ public class NetherShield extends PotionPassive {
      * @param plugin plugin reference
      */
     public NetherShield(Plugin plugin) {
-        super(plugin, EnchantDefaults.NETHERSHIELD, ItemSets.CHESTPLATES.getItems());
+        super(plugin, EnchantDefaults.NETHERSHIELD, ItemSets.ARMOR.getItems());
         description = "Passively grants fire resistance bonus";
         suffixGroups.add(SuffixGroups.FIRE.getKey());
     }

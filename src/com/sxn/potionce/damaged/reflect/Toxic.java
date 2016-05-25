@@ -17,7 +17,7 @@ public class Toxic extends PotionReflect {
      * @param plugin plugin reference
      */
     public Toxic(Plugin plugin) {
-        super(plugin, EnchantDefaults.TOXIC, ItemSets.HELMETS.getItems());
+        super(plugin, EnchantDefaults.TOXIC, ItemSets.ARMOR.getItems());
         description = "Poisons enemies when hit";
         suffixGroups.add(SuffixGroups.POISON.getKey());
     }

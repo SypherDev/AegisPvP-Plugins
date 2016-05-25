@@ -10,7 +10,7 @@ import org.bukkit.potion.PotionEffectType;
 public class Berserking extends PotionSteal {
 
     public Berserking(Plugin plugin) {
-        super(plugin, EnchantDefaults.BERSERKING, ItemSets.AXES.getItems());
+        super(plugin, EnchantDefaults.BERSERKING, ItemSets.MELEE.getItems());
         description = "Grants bonus damage on attack";
         suffixGroups.add(SuffixGroups.STRENGTH.getKey());
     }

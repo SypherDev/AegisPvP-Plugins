@@ -17,7 +17,7 @@ public class Fervor extends PotionSteal {
      * @param plugin plugin reference
      */
     public Fervor(Plugin plugin) {
-        super(plugin, EnchantDefaults.FERVOR, ItemSets.SWORDS.getItems());
+        super(plugin, EnchantDefaults.FERVOR, ItemSets.MELEE.getItems());
         description = "Grants bonus speed on hit";
         suffixGroups.add(SuffixGroups.SPEED.getKey());
     }

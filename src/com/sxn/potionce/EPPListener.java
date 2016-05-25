@@ -40,6 +40,10 @@ public class EPPListener implements Listener {
         EnchantPotionPack.instance.jump.initializePlayer(event.getPlayer());
         EnchantPotionPack.instance.energized.initializePlayer(event.getPlayer());
         EnchantPotionPack.instance.adrenaline.initializePlayer(event.getPlayer());
+        EnchantPotionPack.instance.nethershield.initializePlayer(event.getPlayer());
+        EnchantPotionPack.instance.revive.initializePlayer(event.getPlayer());
+        EnchantPotionPack.instance.saturation.initializePlayer(event.getPlayer());
+        EnchantPotionPack.instance.gills.initializePlayer(event.getPlayer());
     }
 
     /**
@@ -53,6 +57,10 @@ public class EPPListener implements Listener {
         EnchantPotionPack.instance.jump.clearPlayer(event.getPlayer().getName());
         EnchantPotionPack.instance.energized.clearPlayer(event.getPlayer().getName());
         EnchantPotionPack.instance.adrenaline.clearPlayer(event.getPlayer().getName());
+        EnchantPotionPack.instance.nethershield.clearPlayer(event.getPlayer().getName());
+        EnchantPotionPack.instance.revive.clearPlayer(event.getPlayer().getName());
+        EnchantPotionPack.instance.saturation.clearPlayer(event.getPlayer().getName());
+        EnchantPotionPack.instance.gills.clearPlayer(event.getPlayer().getName());
     }
 
     /**
@@ -66,5 +74,9 @@ public class EPPListener implements Listener {
         EnchantPotionPack.instance.jump.clearPlayer(event.getPlayer().getName());
         EnchantPotionPack.instance.energized.clearPlayer(event.getPlayer().getName());
         EnchantPotionPack.instance.adrenaline.clearPlayer(event.getPlayer().getName());
+        EnchantPotionPack.instance.nethershield.clearPlayer(event.getPlayer().getName());
+        EnchantPotionPack.instance.revive.clearPlayer(event.getPlayer().getName());
+        EnchantPotionPack.instance.saturation.clearPlayer(event.getPlayer().getName());
+        EnchantPotionPack.instance.gills.clearPlayer(event.getPlayer().getName());
     }
 }
