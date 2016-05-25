@@ -1,9 +1,9 @@
 package com.sxn.potionce.data;
 
-import com.sxn.potionce.EnchantPotionPack;
-
 import java.util.Arrays;
 import java.util.Hashtable;
+
+import com.sxn.potionce.EnchantPotionPack;
 
 /**
  * Default data for enchantments
@@ -205,6 +205,16 @@ public enum EnchantDefaults {
         put(ConfigValues.TIER_BASE.getKey(), 2);
         put(ConfigValues.TIER_BONUS.getKey(), 0);
         put(ConfigValues.DUR_BASE.getKey(), 1);
+        put(ConfigValues.DUR_BONUS.getKey(), 0.5);
+    }}),
+
+    CONFUSION ("Confusion", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 5);
+        put(ConfigValues.CHANCE_BASE.getKey(), 100);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 0);
+        put(ConfigValues.TIER_BASE.getKey(), 2);
+        put(ConfigValues.TIER_BONUS.getKey(), 0);
+        put(ConfigValues.DUR_BASE.getKey(), 2);
         put(ConfigValues.DUR_BONUS.getKey(), 0.5);
     }});
 
