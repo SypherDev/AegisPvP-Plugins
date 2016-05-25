@@ -1,0 +1,4 @@
+name: EnchantPotionPack
+main: com.sxn.potionce.EnchantPotionPack
+version: 1.0
+depend: [EnchantmentAPI]
