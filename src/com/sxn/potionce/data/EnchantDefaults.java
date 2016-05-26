@@ -230,6 +230,22 @@ public enum EnchantDefaults {
         put(ConfigValues.CHANCE_BONUS.getKey(), 2.5);
         put(ConfigValues.SPD_BASE.getKey(), 0.8);
         put(ConfigValues.SPD_BONUS.getKey(), 0);
+    }}),
+    
+    LIGHTNING ("Lightning", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 4);
+        put(ConfigValues.CHANCE_BASE.getKey(), 5);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 2.5);
+        put(ConfigValues.SPD_BASE.getKey(), 0.8);
+        put(ConfigValues.SPD_BONUS.getKey(), 0);
+    }}),
+	
+    BLACKHOLE ("BlackHole", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 4);
+        put(ConfigValues.CHANCE_BASE.getKey(), 5);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 2.5);
+        put(ConfigValues.SPD_BASE.getKey(), 0.8);
+        put(ConfigValues.SPD_BONUS.getKey(), 0);
     }});
 
     /**
