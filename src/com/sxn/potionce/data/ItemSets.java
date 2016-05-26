@@ -1,8 +1,8 @@
 package com.sxn.potionce.data;
 
-import org.bukkit.Material;
+import javax.rmi.CORBA.Util;
 
-import com.sxn.util.Util;
+import org.bukkit.Material;
 
 /**
  * Various sets of items for using as enchantments' natural items
@@ -26,13 +26,13 @@ public enum ItemSets {
             Material.GOLD_AXE,
             Material.DIAMOND_AXE }),
     
-    MELEE ((Material[]) Util.combine(SWORDS.getItems(), AXES.getItems())),
+    MELEE ((Material[]) combine(SWORDS.getItems(), AXES.getItems())),
 
-    SBOWS ((Material[]) Util.combine(SWORDS.getItems(), BOWS.getItems())),
+    SBOWS ((Material[]) combine(SWORDS.getItems(), BOWS.getItems())),
 
-    BOXES ((Material[]) Util.combine(BOWS.getItems(), AXES.getItems())),
+    BOXES ((Material[]) combine(BOWS.getItems(), AXES.getItems())),
 
-    WEAPONS ((Material[]) Util.combine(SWORDS.getItems(), BOWS.getItems(), AXES.getItems())), 
+    WEAPONS ((Material[]) combine(SWORDS.getItems(), BOWS.getItems(), AXES.getItems())), 
     
     HELMETS (new Material[] {
             Material.LEATHER_HELMET,
@@ -62,7 +62,7 @@ public enum ItemSets {
             Material.GOLD_LEGGINGS,
             Material.DIAMOND_LEGGINGS}),
 	
-	ARMOR ((Material[]) Util.combine(HELMETS.getItems(), CHESTPLATES.getItems(), LEGGINGS.getItems(), BOOTS.getItems()));
+	ARMOR ((Material[]) combine(HELMETS.getItems(), CHESTPLATES.getItems(), LEGGINGS.getItems(), BOOTS.getItems()));
 
     /**
      * Item list
@@ -85,4 +85,19 @@ public enum ItemSets {
         return items;
     }
     
+    public static Material[] combine(Material[]... groups) {
+    	int arraySize = 0;
+    	for (Material[] group: groups) {
+    		arraySize += group.length;
+    	}
+    	Material[] newGroup = new Material[arraySize];
+    	int i = 0;
+    	for (Material[] group: groups) {
+    		for (Material material: group) {
+    			newGroup[i++] = material;
+    		}
+    	}
+    	return newGroup;
+    }
+
 }
