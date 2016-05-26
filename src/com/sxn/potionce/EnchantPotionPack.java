@@ -8,6 +8,7 @@ import com.sxn.potionce.damaged.reflect.*;
 import com.sxn.potionce.hit.steal.*;
 import com.sxn.potionce.hit.inflict.*;
 import com.sxn.potionce.passive.*;
+import com.sxn.potionce.enchants.*;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.HandlerList;
@@ -146,6 +147,16 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
         		/*
         		 * Other Enchantments
         		 */
+        		new BlackHole(this),
+           		new Launch(this),
+           		new Life(this),
+           		new Lifesteal(this),
+           		new Lightning(this),
+           		new Reflect(this),
+           		new ShadowShift(this),
+           		new Shockwave(this),
+           		new Sniper(this),
+           		new TPAYourNutsOff(this),
         		/*
         		 * Passive Potion Enchantments
         		 */
