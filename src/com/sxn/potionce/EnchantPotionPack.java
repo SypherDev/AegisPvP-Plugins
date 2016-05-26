@@ -59,11 +59,16 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
      */
     Revive revive;
 
+    PotionPassive[] passiveEffects;
+    
     /**
      * Constructor
      */
     public EnchantPotionPack() {
         instance = this;
+        passiveEffects = new PotionPassive[] {
+        		jump, energized, fullbright, adrenaline, nethershield, gills, saturation, revive
+        };
     }
 
     /**
@@ -91,13 +96,9 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
     public void onDisable() {
 
         // Clear effects and data for passive enchantments
-        fullbright.clearPlayers();
-        jump.clearPlayers();
-        energized.clearPlayers();
-        adrenaline.clearPlayers();
-        nethershield.clearPlayers();
-        saturation.clearPlayers();
-        revive.clearPlayers();
+    	for (PotionPassive passive: EnchantPotionPack.instance.passiveEffects) {
+    		passive.clearPlayers();
+    	}
 
         // Remove listeners
         HandlerList.unregisterAll(this);
