@@ -163,13 +163,7 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
         		/*
         		 * Passive Potion Enchantments
         		 */
-                jump,
-                fullbright,
-                energized,
-                adrenaline,
-                nethershield,
-                saturation,
-                revive
+                jump,fullbright,energized,adrenaline,nethershield,saturation, revive
                 /*
                  * Other Passive Enchantments
                  */
