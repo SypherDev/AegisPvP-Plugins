@@ -12,7 +12,7 @@ import com.sxn.potionce.EnchantPotionPack;
  */
 public enum EnchantDefaults {
 /**
- * Passive Enchantments
+ * Passive Potion Enchantments
  */
     ADRENALINE ("Adrenaline", new Hashtable<String, Object>(){{
         put(ConfigValues.MAX.getKey(), 5);
@@ -56,7 +56,7 @@ public enum EnchantDefaults {
         put(ConfigValues.TIER_BONUS.getKey(), 0);
     }}),
 /**
- * Non-Passive Enchantments
+ * Non-Passive Potion Enchantments
  */
 
     BERSERKING ("Berserking", new Hashtable<String, Object>(){{
@@ -216,6 +216,20 @@ public enum EnchantDefaults {
         put(ConfigValues.TIER_BONUS.getKey(), 0);
         put(ConfigValues.DUR_BASE.getKey(), 2);
         put(ConfigValues.DUR_BONUS.getKey(), 0.5);
+    }}),
+/*
+ * Other Passive Enchantments	
+ */
+    
+/*
+ * Other Non-Passive Enchantments
+ */
+    LAUNCH ("Launch", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 4);
+        put(ConfigValues.CHANCE_BASE.getKey(), 5);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 2.5);
+        put(ConfigValues.SPD_BASE.getKey(), 0.8);
+        put(ConfigValues.SPD_BONUS.getKey(), 0);
     }});
 
     /**

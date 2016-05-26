@@ -129,6 +129,9 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
         revive = new Revive(this);
 
         EnchantmentAPI.registerCustomEnchantments(
+        		/*
+        		 * Potion Effect Enchantments
+        		 */
         		new Berserking(this),
         		new Blinding(this),
         		new Cursed(this),
@@ -140,7 +143,22 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
         		new Root(this),
         		new Toxic(this),
         		new Wither(this),
-                jump, fullbright, energized, adrenaline, nethershield, saturation, revive
+        		/*
+        		 * Other Enchantments
+        		 */
+        		/*
+        		 * Passive Potion Enchantments
+        		 */
+                jump,
+                fullbright,
+                energized,
+                adrenaline,
+                nethershield,
+                saturation,
+                revive
+                /*
+                 * Other Passive Enchantments
+                 */
         );
 
         // Update the config (because EnchantDefaults will have put any missing data)
