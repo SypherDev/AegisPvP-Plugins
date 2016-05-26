@@ -217,6 +217,13 @@ public enum EnchantDefaults {
         put(ConfigValues.DUR_BASE.getKey(), 2);
         put(ConfigValues.DUR_BONUS.getKey(), 0.5);
     }}),
+    TPAYNO ("TPAYourNutsOff", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 5);
+        put(ConfigValues.CHANCE_BASE.getKey(), 5);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 5);
+        put(ConfigValues.TIER_BASE.getKey(), 2);
+        put(ConfigValues.TIER_BONUS.getKey(), 0);
+    }}),
 /*
  * Other Passive Enchantments	
  */
