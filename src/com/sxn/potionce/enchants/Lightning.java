@@ -19,7 +19,7 @@ public class Lightning extends ConfigurableEnchantment {
      * @param plugin plugin reference
      */
     public Lightning(Plugin plugin) {
-        super(plugin, EnchantDefaults.LIGHTNING, ItemSets.AXES.getItems());
+        super(plugin, EnchantDefaults.LIGHTNING, ItemSets.WEAPONS.getItems());
         description = "Chance to strike lightning on hit";
         suffixGroups.add(SuffixGroups.LIGHTNING.getKey());
     }
