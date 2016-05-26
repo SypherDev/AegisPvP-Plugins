@@ -247,6 +247,46 @@ public enum EnchantDefaults {
         put(ConfigValues.SPD_BONUS.getKey(), 0);
     }}),
     
+    SHOCKWAVE ("Shockwave", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 4);
+        put(ConfigValues.CHANCE_BASE.getKey(), 5);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 2.5);
+        put(ConfigValues.SPD_BASE.getKey(), 0.8);
+        put(ConfigValues.SPD_BONUS.getKey(), 0);
+    }}),
+    
+    SHADOWSHIFT ("ShadowShift", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 4);
+        put(ConfigValues.CHANCE_BASE.getKey(), 5);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 2.5);
+        put(ConfigValues.SPD_BASE.getKey(), 0.8);
+        put(ConfigValues.SPD_BONUS.getKey(), 0);
+    }}),
+    
+    LIFE ("Life", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 4);
+        put(ConfigValues.CHANCE_BASE.getKey(), 5);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 2.5);
+        put(ConfigValues.SPD_BASE.getKey(), 0.8);
+        put(ConfigValues.SPD_BONUS.getKey(), 0);
+    }}),
+    
+    LIFESTEAL ("Lifesteal", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 4);
+        put(ConfigValues.CHANCE_BASE.getKey(), 5);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 2.5);
+        put(ConfigValues.SPD_BASE.getKey(), 0.8);
+        put(ConfigValues.SPD_BONUS.getKey(), 0);
+    }}),
+    
+    REFLECT ("Reflect", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 4);
+        put(ConfigValues.CHANCE_BASE.getKey(), 5);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 2.5);
+        put(ConfigValues.SPD_BASE.getKey(), 0.8);
+        put(ConfigValues.SPD_BONUS.getKey(), 0);
+    }}),
+    
     SNIPER ("Sniper", new Hashtable<String, Object>(){{
         put(ConfigValues.MAX.getKey(), 4);
         put(ConfigValues.CHANCE_BASE.getKey(), 5);
