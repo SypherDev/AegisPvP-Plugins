@@ -136,6 +136,7 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
         		new Berserking(this),
         		new Blinding(this),
         		new Cursed(this),
+        		new Confusion(this),
         		new Fervor(this),
         		new Frost(this),
         		new Magma(this),
