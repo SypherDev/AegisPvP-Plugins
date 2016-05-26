@@ -152,6 +152,7 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
            		new Launch(this),
            		new Life(this),
            		new Lifesteal(this),
+           		new HealthBoost(this),
            		new Lightning(this),
            		new Reflect(this),
            		new ShadowShift(this),
