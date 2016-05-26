@@ -4,6 +4,7 @@ import com.rit.sucy.service.SuffixGroups;
 import com.sxn.potionce.data.EnchantDefaults;
 import com.sxn.potionce.data.ItemSets;
 import org.bukkit.plugin.Plugin;
+import org.bukkit.potion.Potion;
 import org.bukkit.potion.PotionEffectType;
 
 /**
