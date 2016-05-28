@@ -29,13 +29,8 @@ public class Blinding extends PotionInflict {
     /**
      * @return potion type applied by this enchantment
      */
-    public void applyEffect(LivingEntity user, LivingEntity target, int level, EntityDamageByEntityEvent event) {
-        if (roll(level) && works(target, user))
-            target.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, duration(level), tier(level)), true);
-    }
-
 	@Override
 	public PotionEffectType type() {
-		return null;
+		return PotionEffectType.BLINDNESS;
 	}
 }

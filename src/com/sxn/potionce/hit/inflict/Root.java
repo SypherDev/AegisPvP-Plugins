@@ -3,7 +3,11 @@ package com.sxn.potionce.hit.inflict;
 import com.rit.sucy.service.SuffixGroups;
 import com.sxn.potionce.data.EnchantDefaults;
 import com.sxn.potionce.data.ItemSets;
+
+import org.bukkit.entity.LivingEntity;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.plugin.Plugin;
+import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 /**
@@ -22,10 +26,8 @@ public class Root extends PotionInflict {
         suffixGroups.add(SuffixGroups.SLOWING.getKey());
     }
 
-    /**
-     * @return type of potion applied by this enchantment
-     */
-    public PotionEffectType type() {
-        return PotionEffectType.SLOW;
-    }
+	@Override
+	public PotionEffectType type() {
+		return PotionEffectType.SLOW;
+	}
 }
