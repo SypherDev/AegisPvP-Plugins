@@ -47,7 +47,7 @@ public abstract class PotionPassive extends ConfigurableEnchantment implements P
 
         // Apply the effect and start a timer to keep it on
         PotionRunnable runnable = new PotionRunnable(player, type(), tier(level));
-        runnable.runTaskTimer(plugin, 0, 9998999);
+        runnable.runTaskTimer(plugin, 1, Integer.MAX_VALUE - 6000);
         tasks.put(player.getName(), runnable);
     }
 
@@ -76,9 +76,11 @@ public abstract class PotionPassive extends ConfigurableEnchantment implements P
      */
     public void initializePlayer(Player player) {
         for (ItemStack item : player.getEquipment().getArmorContents()) {
-            for (Map.Entry<CustomEnchantment, Integer> entry : EnchantmentAPI.getEnchantments(item).entrySet())
-                if (entry.getKey().name().equals(name()))
+            for (Map.Entry<CustomEnchantment, Integer> entry : EnchantmentAPI.getEnchantments(item).entrySet()) {
+                if (entry.getKey().name().equals(name())) {
                     entry.getKey().applyEquipEffect(player, entry.getValue());
+                }
+            }
         }
     }
 

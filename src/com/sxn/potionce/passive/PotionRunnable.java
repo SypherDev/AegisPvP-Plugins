@@ -42,6 +42,6 @@ public class PotionRunnable extends BukkitRunnable {
      * Applies the potion effect
      */
     public void run() {
-        player.addPotionEffect(new PotionEffect(type, 9999999, level), true);
+        player.addPotionEffect(new PotionEffect(type, Integer.MAX_VALUE, level), true);
     }
 }

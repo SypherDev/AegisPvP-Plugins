@@ -66,9 +66,6 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
      */
     public EnchantPotionPack() {
         instance = this;
-        passiveEffects = new PotionPassive[] {
-        		jump, energized, fullbright, adrenaline, nethershield, gills, saturation, revive
-        };
     }
 
     /**
@@ -129,6 +126,10 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
         nethershield = new NetherShield(this);
         saturation = new Saturation(this);
         revive = new Revive(this);
+        gills = new Gills(this);
+        passiveEffects = new PotionPassive[] {
+        		jump, energized, fullbright, adrenaline, nethershield, gills, saturation, revive
+        };
 
         EnchantmentAPI.registerCustomEnchantments(
         		/*
