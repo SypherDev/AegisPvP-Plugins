@@ -36,10 +36,7 @@ public class EPPListener implements Listener {
      */
     @EventHandler
     public void onConnect(PlayerJoinEvent event) {
-    	System.out.printf("[EPP] instance=%s, passiveeffects=%s\n", EnchantPotionPack.instance, EnchantPotionPack.instance.passiveEffects);
     	for (PotionPassive passive: EnchantPotionPack.instance.passiveEffects) {
-        	System.out.printf("[EPP] instance=%s, passiveeffects=%s\n, passive=%s, event=%s, event.getPlayer()=%s", 
-        			EnchantPotionPack.instance, EnchantPotionPack.instance.passiveEffects, passive, event, event.getPlayer());
             passive.initializePlayer(event.getPlayer());
     	}
     }

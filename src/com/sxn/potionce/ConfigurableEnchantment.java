@@ -1,6 +1,7 @@
 package com.sxn.potionce;
 
 import com.rit.sucy.CustomEnchantment;
+import com.rit.sucy.EnchantmentAPI;
 import com.rit.sucy.enchanting.EListener;
 import com.sxn.potionce.data.ConfigValues;
 import com.sxn.potionce.data.ConflictGroup;
@@ -12,9 +13,11 @@ import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 
 import java.util.Hashtable;
+import java.util.Map;
 
 /**
  * Base class for configurable enchantments
@@ -269,6 +272,15 @@ public class ConfigurableEnchantment extends CustomEnchantment {
     }
 
     /**
+     * Calculates the max stacks
+     * @param level
+     * @return
+     */
+    public int maxStacks(int level) {
+        return getInt(ConfigValues.STACKS_BASE.getKey()) + getInt(ConfigValues.STACKS_BONUS.getKey()) * (level - 1);
+    }
+
+    /**
      * Checks if the entity can be affected by this enchantment
      *
      * @param entity target entity
@@ -290,4 +302,5 @@ public class ConfigurableEnchantment extends CustomEnchantment {
         else if (!getBoolean(ConfigValues.PVE.getKey())) return false;
         return true;
     }
+    
 }

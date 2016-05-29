@@ -56,7 +56,7 @@ public enum EnchantDefaults {
         put(ConfigValues.TIER_BONUS.getKey(), 0);
     }}),
 /**
- * Non-Passive Potion Enchantments
+ * On-Hit Potion Enchantments
  */
 
     BERSERKING ("Berserking", new Hashtable<String, Object>(){{
@@ -217,13 +217,6 @@ public enum EnchantDefaults {
         put(ConfigValues.DUR_BASE.getKey(), 2);
         put(ConfigValues.DUR_BONUS.getKey(), 0.5);
     }}),
-    TPAYNO ("TPAYourNutsOff", new Hashtable<String, Object>(){{
-        put(ConfigValues.MAX.getKey(), 5);
-        put(ConfigValues.CHANCE_BASE.getKey(), 5);
-        put(ConfigValues.CHANCE_BONUS.getKey(), 5);
-        put(ConfigValues.TIER_BASE.getKey(), 2);
-        put(ConfigValues.TIER_BONUS.getKey(), 0);
-    }}),
 /*
  * Other Passive Enchantments	
  */
@@ -231,6 +224,12 @@ public enum EnchantDefaults {
 /*
  * Other Non-Passive Enchantments
  */
+    TPAYNO ("TPAYourNutsOff", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 5);
+        put(ConfigValues.CHANCE_BASE.getKey(), 10);
+        put(ConfigValues.CHANCE_BONUS.getKey(), 10);
+    }}),
+    
     LAUNCH ("Launch", new Hashtable<String, Object>(){{
         put(ConfigValues.MAX.getKey(), 4);
         put(ConfigValues.CHANCE_BASE.getKey(), 5);
@@ -301,6 +300,14 @@ public enum EnchantDefaults {
         put(ConfigValues.CHANCE_BONUS.getKey(), 2.5);
         put(ConfigValues.SPD_BASE.getKey(), 0.8);
         put(ConfigValues.SPD_BONUS.getKey(), 0);
+    }}),
+
+    RAGE ("Rage", new Hashtable<String, Object>(){{
+        put(ConfigValues.MAX.getKey(), 5);
+        put(ConfigValues.DMG_BASE.getKey(), 1);
+        put(ConfigValues.DMG_BONUS.getKey(), 1);
+        put(ConfigValues.STACKS_BASE.getKey(), 1);
+        put(ConfigValues.STACKS_BONUS.getKey(), 1);
     }});
 
     /**

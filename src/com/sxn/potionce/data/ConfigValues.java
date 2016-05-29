@@ -81,6 +81,16 @@ public enum ConfigValues {
     RANGE_BONUS ("rangeBonus"),
 
     /**
+     * Max rage stacks
+     */
+    STACKS_BASE ("baseStacks"),
+
+    /**
+     * Rage stacks bonus
+     */
+    STACKS_BONUS ("bonusStacks"),
+
+    /**
      * Launch speed for an enchantment at level 1
      */
     SPD_BASE ("speedBase"),

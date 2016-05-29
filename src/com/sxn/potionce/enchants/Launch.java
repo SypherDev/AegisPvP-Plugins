@@ -35,8 +35,9 @@ public class Launch extends ConfigurableEnchantment {
      */
     @Override
     public void applyEffect(LivingEntity user, LivingEntity target, int level, EntityDamageByEntityEvent event) {
-        if (roll(level) && works(target, user))
+        if (roll(level) && works(target, user)) {
             // Need to knock them up later to get past Minecraft's knockback on taking damage
             new LaunchTask(target, (float)speed(level)).runTaskLater(plugin, 1);
+        }
     }
 }
