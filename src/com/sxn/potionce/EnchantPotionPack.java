@@ -161,6 +161,7 @@ public class EnchantPotionPack extends EnchantPlugin implements CommandExecutor 
            		new Shockwave(this),
            		new Sniper(this),
            		new TPAYourNutsOff(this),
+           		new Rage(this),
         		/*
         		 * Passive Potion Enchantments
         		 */
